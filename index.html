@@ -1,269 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sudipta Singha Rathi - Portfolio</title>
-        <style>
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f7f6;
-    color: #333;
-    line-height: 1.6;
-}
-
-        header {
-            background: #3d5a80;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2rem;
-            font-weight: 300;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        .profile {
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .profile img {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            border: 4px solid #98c1d9;
-            transition: transform 0.3s ease;
-        }
-
-        .profile img:hover {
-            transform: scale(1.05);
-        }
-
-        section {
-            background: white;
-            padding: 30px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #007BFF;
-            color: #3d5a80;
-        }
-
-        p {
-            font-size: 1.1rem;
-            margin: 10px 0;
-        }
-
-        .skills-group {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .skills-title {
-            font-weight: bold;
-            min-width: 120px;
-            color: #3d5a80;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill {
-            background: #3d5a80;
-            color: white;
-            padding: 8px 14px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            transition: background 0.3s ease;
-        }
-
-        .skill:hover {
-            background: #001d3d;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .project {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .project a {
-            text-decoration: none;
-            color: #3d5a80;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .project a:hover {
-            color: #001d3d;
-        }
-
-        footer {
-            background: #98c1d9;
-            color: black;
-            text-align: center;
-            padding: 20px;
-            font-size: 1rem;
-            margin-top: 40px;
-        }
-
-        .links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .links a {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color: #3d5a80;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .links a:hover {
-            color: #001d3d;
-        }
-
-        .links a i {
-            font-size: 1.2rem;
-        }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Sudipta Singha Rathi</h1>
-            <p>Passionate Software Developer | Web Development | Machine Learning | Open Source Enthusiast</p>
-        </header>
-        <div class="container">
-            <div class="profile">
-                <img src="resources/profile.jpg" alt="Sudipta Singha Rathi">
-            </div>
-            <section>
-                <h2>About Me</h2>
-                <p>I'm a 4th-year Computer Science and Engineering student at Jahangirnagar University. I love exploring new technologies and improving my skills.</p>
-                <p>Currently learning Machine Learning, Reinforcement Learning, Data Structures, System Design, Django, and DevOps.</p>
-                <p>Ask me about Linux, Competitive Programming, Data Structures, and Algorithms.</p>
-
-            </section>
-            <section>
-                <h2>Education</h2>
-                <p><strong>Jahangirnagar University</strong> - BSc in Computer Science and Engineering</p>
-                <p><strong>Milestone College</strong>-HSC in Science</p>
-                <p><strong>Tetaigaon Rashid Uddin High School</strong>-SSC in Science</p>
-            </section>
-            <section>
-                <h2>My Profiles</h2>
-                <div class="links">
-                    <a href="https://github.com/sudiptarathi2020" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/sudiptarathi2020" target="_blank">LinkedIn</a>
-
-                    <a href="https://github.com/sudiptarathi2020/sudiptarathi2020.github.io/blob/main/cv.pdf" target="_blank" download>CV</a>
-
-                    <a href="https://codeforces.com/profile/sudiptarathi" target="_blank">Codeforces</a>
-                    <a href="https://lightoj.com/user/sudiptasinha75" target="_blank">LightOJ</a>
-                </div>
-            </section>
-           <section>
-                <h2>Skills</h2>
-                <div class="skills-group">
-                    <span class="skills-title">Languages:</span>
-                    <div class="skills">
-                        <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java">
-                        <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C">
-                        <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
-                        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-                        <img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX">
-                        <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash">
-                    </div>
-                </div>
-
-                <div class="skills-group">
-                    <span class="skills-title">Frameworks:</span>
-                    <div class="skills">
-                        <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
-                    </div>
-                </div>
-
-                <div class="skills-group">
-                    <span class="skills-title">Tools:</span>
-                    <div class="skills">
-                        <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
-                        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-                        <img src="https://img.shields.io/badge/WSL-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=white" alt="WSL">
-                        <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-                        <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
-                    </div>
-                </div>
-
-                <div class="skills-group">
-                    <span class="skills-title">Databases:</span>
-                    <div class="skills">
-                        <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2>Projects</h2>
-                <div class="projects">
-                    <div class="project"><a href="https://github.com/sudiptarathi2020/JUMCMS-Jahangirnagar-University-Medical-Center-Management-System.git">JUMCMS</a>: A web application built with Django to improve medical center operations.</div>
-                    <div class="project"><a href="https://github.com/sudiptarathi2020/Software-Engineering-Lab-CSE404-Reports.git">Software Engineering Lab Reports</a>: My software engineering lab reports.</div>
-                    <div class="project"><a href="https://github.com/sudiptarathi2020/Data-structures-and-Algorithms.git">Data Structure and Algorithm Implementation</a>: Templates for data structures and algorithms.</div>
-                    <div class="project"><a href="https://github.com/sudiptarathi2020/Simple-Chess-Engine.git">Chess Engine</a>: A simple chess engine using the minimax algorithm and alpha-beta pruning.</div>
-                    <div class="project"><a href="https://github.com/sudiptarathi2020/academic-report-maker.git">Academic Report Maker</a>: A Django+React web application for generating academic reports.</div>
-                    <div class="project"><a href="https://github.com/sudiptarathi2020/puddle.git">Puddle</a>: Created following a tutorial.</div>
-                    <div class="project"><a href="https://github.com/sudiptarathi2020/Problem-Solves.git">Solved Problems on OJ</a>: Solutions to various problems on online judges.</div>
-                    <div class="project"><a href="https://github.com/sudiptarathi2020/problem-tutorials.git">Lightoj problem tutorial contributions</a>: My contributions to lightoj problem tutorials.</div>
-                </div>
-            </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudipta Singha Rathi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sudipta Singha Rathi</h1>
+        <p>Passionate Software Developer | Web Development | Machine Learning | Open Source Enthusiast</p>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <img src="resources/profile.jpg" alt="Sudipta Singha Rathi">
         </div>
-        <footer>
-            <p>Contact: jucse29.408@gmail.com | rathisudipta99@gmail.com | singha.stu2019@juniv.edu</p>
-        </footer>
-    </body>
+        <section>
+            <h2>About Me</h2>
+            <p>I'm a 4th-year Computer Science and Engineering student at Jahangirnagar University. I love exploring new technologies and improving my skills.</p>
+            <p>Currently learning Machine Learning, Reinforcement Learning, Data Structures, System Design, Django, and DevOps.</p>
+            <p>Ask me about Linux, Competitive Programming, Data Structures, and Algorithms.</p>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <p><strong>Jahangirnagar University</strong> - BSc in Computer Science and Engineering</p>
+            <p><strong>Milestone College</strong> - HSC in Science</p>
+            <p><strong>Tetaigaon Rashid Uddin High School</strong> - SSC in Science</p>
+        </section>
+        <section>
+            <h2>My Profiles</h2>
+            <div class="links">
+                <a href="https://github.com/sudiptarathi2020" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/sudiptarathi2020" target="_blank">LinkedIn</a>
+                <a href="https://github.com/sudiptarathi2020/sudiptarathi2020.github.io/blob/main/cv.pdf" target="_blank" download>CV</a>
+                <a href="https://codeforces.com/profile/sudiptarathi" target="_blank">Codeforces</a>
+                <a href="https://lightoj.com/user/sudiptasinha75" target="_blank">LightOJ</a>
+            </div>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-group">
+                <span class="skills-title">Languages:</span>
+                <div class="skills">
+                    <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java">
+                    <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C">
+                    <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                    <img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX">
+                    <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash">
+                </div>
+            </div>
+            <div class="skills-group">
+                <span class="skills-title">Frameworks:</span>
+                <div class="skills">
+                    <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
+                </div>
+            </div>
+            <div class="skills-group">
+                <span class="skills-title">Tools:</span>
+                <div class="skills">
+                    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+                    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                    <img src="https://img.shields.io/badge/WSL-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=white" alt="WSL">
+                    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+                    <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
+                </div>
+            </div>
+            <div class="skills-group">
+                <span class="skills-title">Databases:</span>
+                <div class="skills">
+                    <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project"><a href="https://github.com/sudiptarathi2020/JUMCMS-Jahangirnagar-University-Medical-Center-Management-System.git">JUMCMS</a>: A web application built with Django to improve medical center operations.</div>
+                <div class="project"><a href="https://github.com/sudiptarathi2020/Software-Engineering-Lab-CSE404-Reports.git">Software Engineering Lab Reports</a>: My software engineering lab reports.</div>
+                <div class="project"><a href="https://github.com/sudiptarathi2020/Data-structures-and-Algorithms.git">Data Structure and Algorithm Implementation</a>: Templates for data structures and algorithms.</div>
+                <div class="project"><a href="https://github.com/sudiptarathi2020/Simple-Chess-Engine.git">Chess Engine</a>: A simple chess engine using the minimax algorithm and alpha-beta pruning.</div>
+                <div class="project"><a href="https://github.com/sudiptarathi2020/academic-report-maker.git">Academic Report Maker</a>: A Django+React web application for generating academic reports.</div>
+                <div class="project"><a href="https://github.com/sudiptarathi2020/puddle.git">Puddle</a>: Created following a tutorial.</div>
+                <div class="project"><a href="https://github.com/sudiptarathi2020/Problem-Solves.git">Solved Problems on OJ</a>: Solutions to various problems on online judges.</div>
+                <div class="project"><a href="https://github.com/sudiptarathi2020/problem-tutorials.git">Lightoj problem tutorial contributions</a>: My contributions to lightoj problem tutorials.</div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Contact: jucse29.408@gmail.com | rathisudipta99@gmail.com | singha.stu2019@juniv.edu</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>

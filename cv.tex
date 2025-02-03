@@ -3,12 +3,20 @@
 \usepackage{titlesec, xcolor, enumitem, hyperref, graphicx}
 \usepackage{tikz}
 \usepackage{fontawesome5}
+\usepackage{fontspec}
+
+% Define custom colors
 \definecolor{darkblue}{RGB}{61,90,128}
 \definecolor{lightblue}{RGB}{152,193,217}
 \definecolor{graytext}{RGB}{100,100,100}
 
+% Define custom font
+\setmainfont{Arial}
+
+% Title format
 \titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
 
+% Hyperlink setup
 \hypersetup{
     colorlinks=true,
     linkcolor=darkblue,
@@ -35,22 +43,25 @@ I'm a 4th-year Computer Science and Engineering student at Jahangirnagar Univers
 Currently learning Machine Learning, Reinforcement Learning, Data Structures, System Design, Django, and DevOps.
 
 \section*{Education}
-
-\textbf{Jahangirnagar University}\\
-BSc in Computer Science and Engineering\\
-\textbf{Milestone College} \\
-HSC in Science\\
-\textbf{Tetaigaon Rashid Uddin High School}\\
-SSC in Science
+\begin{itemize}[leftmargin=0.5cm]
+    \item \textbf{Jahangirnagar University}\\
+    BSc in Computer Science and Engineering
+    \item \textbf{Milestone College}\\
+    HSC in Science
+    \item \textbf{Tetaigaon Rashid Uddin High School}\\
+    SSC in Science
+\end{itemize}
 
 \section*{Skills}
-\textbf{Languages:} Java, C, C++, Python, LaTeX, Bash\\
-\textbf{Frameworks:} Django\\
-\textbf{Tools:} Linux, Git, WSL, Docker, AWS\\
-\textbf{Databases:} SQLite
+\begin{itemize}[leftmargin=0.5cm]
+    \item \textbf{Languages:} Java, C, C++, Python, LaTeX, Bash
+    \item \textbf{Frameworks:} Django
+    \item \textbf{Tools:} Linux, Git, WSL, Docker, AWS
+    \item \textbf{Databases:} SQLite
+\end{itemize}
 
 \section*{Projects}
-\begin{itemize}
+\begin{itemize}[leftmargin=0.5cm]
     \item \href{https://github.com/sudiptarathi2020/JUMCMS-Jahangirnagar-University-Medical-Center-Management-System.git}{JUMCMS}: A web application built with Django to improve medical center operations.
     \item \href{https://github.com/sudiptarathi2020/Software-Engineering-Lab-CSE404-Reports.git}{Software Engineering Lab Reports}: My software engineering lab reports.
     \item \href{https://github.com/sudiptarathi2020/Data-structures-and-Algorithms.git}{Data Structure and Algorithm Implementation}: Templates for data structures and algorithms.
@@ -62,10 +73,12 @@ SSC in Science
 \end{itemize}
 
 \section*{Contact}
-\textbf{Address:} Jahangirnagar University, Savar, Dhaka\\
-\textbf{Phone:} +8801746-579065, +8801538-153490\\
-\textbf{Email:} jucse29.408@gmail.com | rathisudipta99@gmail.com | singha.stu2019@juniv.edu\\
-\textbf{GitHub:} \href{https://github.com/sudiptarathi2020}{\faGithub ~ sudiptarathi2020}\\
-%\textbf{LinkedIn:} \href{https://linkedin.com/in/your-profile}{\faLinkedin ~ Your LinkedIn Profile}
+\begin{itemize}[leftmargin=0.5cm]
+    \item \textbf{Address:} Jahangirnagar University, Savar, Dhaka
+    \item \textbf{Phone:} +8801746-579065, +8801538-153490
+    \item \textbf{Email:} \href{mailto:jucse29.408@gmail.com}{jucse29.408@gmail.com} | \href{mailto:rathisudipta99@gmail.com}{rathisudipta99@gmail.com} | \href{mailto:singha.stu2019@juniv.edu}{singha.stu2019@juniv.edu}
+    \item \textbf{GitHub:} \href{https://github.com/sudiptarathi2020}{\faGithub \ sudiptarathi2020}
+    % \item \textbf{LinkedIn:} \href{https://linkedin.com/in/your-profile}{\faLinkedin \ Your LinkedIn Profile}
+\end{itemize}
 
 \end{document}
