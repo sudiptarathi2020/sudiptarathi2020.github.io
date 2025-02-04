@@ -1,18 +1,26 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
-\usepackage{titlesec, xcolor, enumitem, hyperref, graphicx}
+\usepackage{titlesec, xcolor, enumitem, hyperref, graphicx, tcolorbox, fontspec, multicol, setspace}
 \usepackage{tikz}
 \usepackage{fontawesome5}
-\usepackage{fontspec}
+
+% Set main font
+\setmainfont{Noto Sans}[
+    Kerning = On,
+    Numbers = Uppercase, 
+    BoldFont = Noto Sans SemiBold
+]
+
+% Formatting settings
+\setlength\parindent{0pt}
+\setstretch{1.3}
+\setlength\columnsep{0.25in}
+\pagestyle{empty}
 
 % Define custom colors
 \definecolor{darkblue}{RGB}{61,90,128}
 \definecolor{lightblue}{RGB}{152,193,217}
-\definecolor{graytext}{RGB}{100,100,100}
-
-% Define custom font
-\setmainfont{Arial}
-
+\definecolor{main}{HTML}{5989cf} 
 % Title format
 \titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
 
@@ -23,14 +31,50 @@
     urlcolor=darkblue,
 }
 
+% Custom Box Design
+\tcbset{
+    sharp corners,
+    colback = white,
+    before skip = 0.2cm,
+    after skip = 0.5cm
+}
+
+% Profile Box
+\newtcolorbox{boxM}{
+    fontupper = \color{white},
+    rounded corners,
+    arc = 6pt,
+    colback = darkblue, 
+    colframe = darkblue, 
+    boxrule = 0pt, 
+    bottomrule = 4.5pt,
+    enhanced
+}
+
+\newtcolorbox{boxB}{
+    fontupper = \bf\color{main}, % font color
+    boxrule = 1.5pt,
+    colframe = main,
+    rounded corners,
+    arc = 5pt   % corners roundness
+}
+
+% Project Box
+\newtcolorbox{projectbox}[2][]{colback=lightblue!5!white, colframe=lightblue!80!black, title=#2, fonttitle=\bfseries, coltitle=black}
+
 \begin{document}
 
-\begin{minipage}{0.72\textwidth}
+% Header
+\begin{minipage}{0.65\textwidth}
     {\LARGE\bfseries Sudipta Singha Rathi}\\[0.5em]
-    {\large{Software Developer, Machine Learning Enthusiast, DevOps}}
+    {\large Software Developer | Machine Learning Enthusiast}\\[0.5em]
+    \faPhone \ +8801746-579065 \quad
+    \faEnvelope \ \href{mailto:jucse29.408@gmail.com}{jucse29.408@gmail.com} \\
+    \faGithub \ \href{https://github.com/sudiptarathi2020}{sudiptarathi2020} \quad
+    \faLinkedin \ \href{https://linkedin.com/in/sudiptarathi2020}{LinkedIn}
 \end{minipage}%
 \hfill
-\begin{minipage}{0.23\textwidth}
+\begin{minipage}{0.3\textwidth}
     \centering
     \begin{tikzpicture}
         \clip [rounded corners=0.5cm] (0,0) rectangle (3cm,3cm);
@@ -38,47 +82,65 @@
     \end{tikzpicture}
 \end{minipage}
 
-\section*{About Me}
-I'm a 4th-year Computer Science and Engineering student at Jahangirnagar University. I love exploring new technologies and improving my skills.
-Currently learning Machine Learning, Reinforcement Learning, Data Structures, System Design, Django, and DevOps.
+\vspace{1em}
 
+% About Me
+\section*{About Me}
+A 4th-year Computer Science and Engineering student at Jahangirnagar University, passionate about Machine Learning, Reinforcement Learning, System Design, and DevOps.
+
+% Education
 \section*{Education}
 \begin{itemize}[leftmargin=0.5cm]
-    \item \textbf{Jahangirnagar University}\\
-    BSc in Computer Science and Engineering
-    \item \textbf{Milestone College}\\
-    HSC in Science
-    \item \textbf{Tetaigaon Rashid Uddin High School}\\
-    SSC in Science
+    \item \textbf{Jahangirnagar University} – BSc in Computer Science and Engineering
+    \item \textbf{Milestone College} – HSC in Science
+    \item \textbf{Tetaigaon Rashid Uddin High School} – SSC in Science
 \end{itemize}
 
+% Skills
 \section*{Skills}
-\begin{itemize}[leftmargin=0.5cm]
-    \item \textbf{Languages:} Java, C, C++, Python, LaTeX, Bash
-    \item \textbf{Frameworks:} Django
-    \item \textbf{Tools:} Linux, Git, WSL, Docker, AWS
-    \item \textbf{Databases:} SQLite
-\end{itemize}
 
+\textbf{Programming:} Python, C, C++, Java, LaTeX, Bash \\
+\textbf{Frameworks:} Django \\
+\textbf{Tools:} Linux, Git, WSL, Docker, AWS \\
+\textbf{Databases:} SQLite
+
+
+% Projects
 \section*{Projects}
-\begin{itemize}[leftmargin=0.5cm]
-    \item \href{https://github.com/sudiptarathi2020/JUMCMS-Jahangirnagar-University-Medical-Center-Management-System.git}{JUMCMS}: A web application built with Django to improve medical center operations.
-    \item \href{https://github.com/sudiptarathi2020/Software-Engineering-Lab-CSE404-Reports.git}{Software Engineering Lab Reports}: My software engineering lab reports.
-    \item \href{https://github.com/sudiptarathi2020/Data-structures-and-Algorithms.git}{Data Structure and Algorithm Implementation}: Templates for data structures and algorithms.
-    \item \href{https://github.com/sudiptarathi2020/Simple-Chess-Engine.git}{Chess Engine}: A simple chess engine using the minimax algorithm and alpha-beta pruning.
-    \item \href{https://github.com/sudiptarathi2020/academic-report-maker.git}{Academic Report Maker}: A Django+React web application for generating academic reports.
-    \item \href{https://github.com/sudiptarathi2020/puddle.git}{Puddle}: Created following a tutorial.
-    \item \href{https://github.com/sudiptarathi2020/Problem-Solves.git}{Solved Problems on OJ}: Solutions to various problems on online judges.
-    \item \href{https://github.com/sudiptarathi2020/problem-tutorials.git}{Lightoj Problem Tutorial Contributions}: My contributions to LightOJ problem tutorials.
-\end{itemize}
+\href{https://github.com/sudiptarathi2020/JUMCMS-Jahangirnagar-University-Medical-Center-Management-System.git}{\textbf{JUMCMS}}
+\begin{boxB}
+    A Django-based medical center management system for Jahangirnagar University, featuring appointment scheduling and medical records management.
+\end{boxB}
 
-\section*{Contact}
-\begin{itemize}[leftmargin=0.5cm]
-    \item \textbf{Address:} Jahangirnagar University, Savar, Dhaka
-    \item \textbf{Phone:} +8801746-579065, +8801538-153490
-    \item \textbf{Email:} \href{mailto:jucse29.408@gmail.com}{jucse29.408@gmail.com} | \href{mailto:rathisudipta99@gmail.com}{rathisudipta99@gmail.com} | \href{mailto:singha.stu2019@juniv.edu}{singha.stu2019@juniv.edu}
-    \item \textbf{GitHub:} \href{https://github.com/sudiptarathi2020}{\faGithub \ sudiptarathi2020}
-    % \item \textbf{LinkedIn:} \href{https://linkedin.com/in/your-profile}{\faLinkedin \ Your LinkedIn Profile}
-\end{itemize}
+
+
+\begin{projectbox}[title={\href{https://github.com/sudiptarathi2020/Software-Engineering-Lab-CSE404-Reports.git}{Software Engineering Lab Reports}}]
+A collection of software engineering lab reports documenting various projects and experiments.
+\end{projectbox}
+
+\begin{projectbox}[title={\href{https://github.com/sudiptarathi2020/Data-structures-and-Algorithms.git}{Data Structures \& Algorithms}}]
+Templates and implementations of various data structures, algorithms, and problem-solving techniques.
+\end{projectbox}
+
+\begin{projectbox}[title={\href{https://github.com/sudiptarathi2020/Simple-Chess-Engine.git}{Chess Engine}}]
+A chess engine using the minimax algorithm with alpha-beta pruning for intelligent move selection.
+\end{projectbox}
+
+\begin{projectbox}[title={\href{https://github.com/sudiptarathi2020/academic-report-maker.git}{Academic Report Maker}}]
+A Django + React web application for generating academic reports with structured formatting.
+\end{projectbox}
+
+\begin{projectbox}[title={\href{https://github.com/sudiptarathi2020/Problem-Solves.git}{Online Judge Problem Solutions}}]
+Solutions to problems from Codeforces, LightOJ, and other online judges, with explanations.
+\end{projectbox}
+
+% Online Judge Statistics
+\section*{Online Judge Statistics}
+\begin{multicols}{2}
+\textbf{Codeforces:} 500+ problems solved \\
+\textbf{LightOJ:} 300+ problems solved \\
+\textbf{HackerRank:} 100+ problems solved \\
+\textbf{LeetCode:} 150+ problems solved
+\end{multicols}
 
 \end{document}
