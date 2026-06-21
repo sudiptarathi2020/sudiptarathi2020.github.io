@@ -2,12 +2,16 @@
 # Hello, I'm Sudipta Singha Rathi! 👋
 
 ## About Me
-I'm a passionate software developer with a keen interest in web development, machine learning, and open-source contributions. I love to explore new technologies and continuously improve my skills.
+I'm a passionate software engineer with a strong background in C/C++, system programming, and web development. Recently, I've been diving deep into DevOps and cloud infrastructure. I'm highly motivated, adaptable, and **actively seeking new opportunities**.
 
-- 🎓 MSc student of Computer Science and Engineering From Jahangirnagar University.
-- 🌱 Currently learning Devops.
-- 💬 Ask me about Linux, Competative Programming, Data Structure and Algorithm.
-- 📫 How to reach me: mail me jucse29.408@gmail.com, rathisudipta99@gmail.com, singha.stu2019@juniv.edu.
+- 🎓 BSc in Computer Science and Engineering from Jahangirnagar University.
+- 💼 Previously an R&D Engineer at BDCOM.
+- 🌱 Recently certified in DevOps (CI/CD, Docker, Kubernetes) from Bongodev.
+- 💬 Ask me about Linux, Competitive Programming, Data Structures, and Algorithms.
+- 📫 How to reach me: mail me [sudiptasinha1999@gmail.com](mailto:sudiptasinha1999@gmail.com)
+
+## Certifications
+- 🏆 **DevOps Certification** - [Bongodev](certificate_Sudipta_Singha_bbac0fc8.pdf)
 
 ## Skills
 |Category|Technologies|

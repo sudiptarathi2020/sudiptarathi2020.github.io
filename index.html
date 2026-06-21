@@ -2,177 +2,189 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-  />
-  <title>Sudipta Singha - CV</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-    rel="stylesheet"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Sudipta Singha - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="color-scheme" content="light only" />
-  <meta name="description" content="CV of Sudipta Singha" />
+  <meta name="description" content="Portfolio of Sudipta Singha" />
+  <!-- Feather icons for contact links -->
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-  <div class="paper">
-    <header class="site-header">
-      <h1 class="name">Sudipta Singha</h1>
-      <div class="contact">
-        <span class="contact-item">Savar, Dhaka</span>
-        <a class="contact-item" href="mailto:sudiptasinha1999@gmail.com">sudiptasinha1999@gmail.com</a>
-        <a class="contact-item" href="tel:+8801746579065">+8801746-579065</a>
-        <a class="contact-item" href="https://sudiptarathi.me/" target="_blank" rel="noopener noreferrer">sudiptarathi.me</a>
-        <a class="contact-item" href="https://github.com/sudiptarathi2020" target="_blank" rel="noopener noreferrer">github.com/sudiptarathi2020</a>
-        <a class="contact-item" href="https://linkedin.com/in/sudiptarathi" target="_blank" rel="noopener noreferrer">linkedin.com/in/sudiptarathi</a>
-      </div>
-    </header>
-    <main class="container">
-      <section>
-        <h2>About Me</h2>
-        <p>
-            I’m a Master’s student in Computer Science and Engineering at Jahangirnagar University. I enjoy solving programming problems using C and C++. I have experience with Django, DevOps, and many linux distribution. I love exploring new technologies.
+  
+  <div class="layout-wrapper">
+    
+    <!-- LEFT PANE: Fixed Hero Profile -->
+    <aside class="left-pane">
+      <div class="hero-content">
+        <div class="profile-img-container">
+          <img src="resources/my_profile_pic.jpg" alt="Sudipta Singha" class="profile-img">
+          <div class="profile-img-glow"></div>
+        </div>
+        <h1 class="name">Sudipta Singha</h1>
+        <h2 class="title">Software Engineer & DevOps Enthusiast</h2>
+        <p class="bio">
+          Passionate software engineer with a strong background in C/C++, system programming, and web development. Recently diving deep into DevOps and cloud infrastructure. Actively seeking new opportunities!
         </p>
-      </section>
-
-      <section>
-        <h2>Education</h2>
-
-        <div class="entry">
-          <div class="entry-main">
-            <div class="entry-title"><strong>Jahangirnagar University</strong>, MSc in Computer Science &amp; Engineering</div>
-          </div>
-          <div class="entry-meta">Aug 2025 – Present </div>
+        
+        <div class="contact-links">
+          <a class="contact-item" href="mailto:sudiptasinha1999@gmail.com">
+            <i data-feather="mail"></i> Email
+          </a>
+          <a class="contact-item" href="tel:+8801746579065">
+            <i data-feather="phone"></i> Phone
+          </a>
+          <a class="contact-item" href="https://sudiptarathi.me/" target="_blank" rel="noopener noreferrer">
+            <i data-feather="globe"></i> Website
+          </a>
+          <a class="contact-item" href="https://github.com/sudiptarathi2020" target="_blank" rel="noopener noreferrer">
+            <i data-feather="github"></i> GitHub
+          </a>
+          <a class="contact-item" href="https://linkedin.com/in/sudiptarathi" target="_blank" rel="noopener noreferrer">
+            <i data-feather="linkedin"></i> LinkedIn
+          </a>
         </div>
+      </div>
+    </aside>
 
-        <div class="entry">
-          <div class="entry-main">
-            <div class="entry-title">
-              <strong>Jahangirnagar University</strong>, BSc in Computer Science &amp; Engineering
-              <span class="dim">(CGPA: 3.30/4.0)</span>
-            </div>
-          </div>
-          <div class="entry-meta">Mar 2020 – Jul 2025</div>
-        </div>
-      </section>
-
-      <section>
+    <!-- RIGHT PANE: Scrollable Details -->
+    <main class="right-pane">
+      
+      <!-- Experience Section -->
+      <section class="glass-panel">
         <h2>Experience</h2>
 
         <div class="entry">
-          <div class="entry-main">
-            <div class="entry-title"><strong>Technical Team Leader</strong>, NCPC, JU</div>
-          <div class="entry-meta">Feb 2024 – Mar 2024</div>
-            <ul class="bullets">
-
-              <li>Spearheaded technical operations for a national programming contest, managing a team of organizers.</li>
-              <li>Configured and deployed contest environments, installing Ubuntu on 200+ systems for seamless operation.</li>
-              <li>Ensured system reliability by monitoring infrastructure during the event.</li>
-            </ul>
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">R&D Engineer</div>
+              <div class="entry-subtitle">Shanghai Baud Data Communication Co., Ltd (BDCOM)</div>
+            </div>
+            <div class="entry-meta">Dec 2025 – Jun 2026</div>
           </div>
+          <ul class="bullets">
+            <li>Served as a permanent full-time R&D Engineer, focusing on network protocol development and software engineering in C.</li>
+          </ul>
         </div>
 
         <div class="entry">
-          <div class="entry-main">
-            <div class="entry-title"><strong>Mentor</strong>, JU Programming Community</div>
-          <div class="entry-meta">Mar 2024 – Dec 2024</div>
-            <ul class="bullets">
-              <li>Guided 20+ junior programmers in mastering competitive programming techniques.</li>
-              <li>Designed training sessions to enhance problem-solving and algorithmic skills.</li>
-            </ul>
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">Technical Team Leader</div>
+              <div class="entry-subtitle">NCPC, JU</div>
+            </div>
+            <div class="entry-meta">Feb 2024 – Mar 2024</div>
           </div>
+          <ul class="bullets">
+            <li>Spearheaded technical operations for a national programming contest, managing a team of organizers.</li>
+            <li>Configured and deployed contest environments, installing Ubuntu on 200+ systems for seamless operation.</li>
+            <li>Ensured system reliability by monitoring infrastructure during the event.</li>
+          </ul>
         </div>
       </section>
 
-      <section>
+      <!-- Certifications Section -->
+      <section class="glass-panel">
+        <h2>Certifications</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">DevOps Certification</div>
+              <div class="entry-subtitle">Bongodev</div>
+            </div>
+            <div class="entry-meta">2026</div>
+          </div>
+          <ul class="bullets">
+            <li>Comprehensive training in modern DevOps practices, including CI/CD pipelines, containerization (Docker, Kubernetes), and cloud infrastructure.</li>
+          </ul>
+          <a class="repo-link" href="certificate_Sudipta_Singha_bbac0fc8.pdf" target="_blank" rel="noopener noreferrer">
+            <i data-feather="external-link"></i> View Certificate
+          </a>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="glass-panel">
         <h2>Projects</h2>
 
         <div class="entry">
-          <div class="entry-main">
-            <div class="entry-title">
-                <strong>Jahangirnagar University Medical Center Management System (JUMCMS)</strong>
-            </div>
-            <div class = "entry-meta-github">
-                <a class="repo" href="https://github.com/sudiptarathi2020/JUMCMS-Jahangirnagar-University-Medical-Center-Management-System/" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-            <ul class="bullets">
-              <li>Engineered a Django-based web application to streamline medical center operations.</li>
-              <li>Implemented role-specific features for Admins, Doctors, Patients, Lab Technicians, and Store Managers.</li>
-              <li>Tools Used: Python, Django, SQLite</li>
-            </ul>
+          <div class="entry-header">
+            <div class="entry-title">Jahangirnagar University Medical Center Management System</div>
           </div>
+          <ul class="bullets">
+            <li>Engineered a Django-based web application to streamline medical center operations.</li>
+            <li>Implemented role-specific features for Admins, Doctors, Patients, Lab Technicians, and Store Managers.</li>
+          </ul>
+          <a class="repo-link" href="https://github.com/sudiptarathi2020/JUMCMS-Jahangirnagar-University-Medical-Center-Management-System/" target="_blank" rel="noopener noreferrer">
+            <i data-feather="github"></i> GitHub Repository
+          </a>
         </div>
 
         <div class="entry">
-          <div class="entry-main">
-            <div class="entry-title">
-              <strong>Data Structures and Algorithms Repository</strong>
-            </div>
-            <div class = "entry-meta-github">
-                <a class="repo" href="https://github.com/sudiptarathi2020/Data-structures-and-Algorithms" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-            <ul class="bullets">
-              <li>Built a comprehensive repository of advanced data structures and algorithms.</li>
-              <li>Tools Used: C++</li>
-            </ul>
+          <div class="entry-header">
+            <div class="entry-title">Data Structures and Algorithms Repository</div>
           </div>
+          <ul class="bullets">
+            <li>Built a comprehensive repository of advanced data structures and algorithms in C++.</li>
+          </ul>
+          <a class="repo-link" href="https://github.com/sudiptarathi2020/Data-structures-and-Algorithms" target="_blank" rel="noopener noreferrer">
+            <i data-feather="github"></i> GitHub Repository
+          </a>
         </div>
 
         <div class="entry">
-          <div class="entry-main">
-            <div class="entry-title">
-              <strong>Simple Chess Game</strong>
-            </div>
-            <div class = "entry-meta-github">
-              <a class="repo" href="https://github.com/sudiptarathi2020/raylib-tetris" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-            <ul class="bullets">
-              <li>Developed an interactive tetris game using raylib with core game logic and UI.</li>
-              <li>Tools Used: C++, Raylib</li>
-            </ul>
+          <div class="entry-header">
+            <div class="entry-title">Simple Chess Game / Tetris</div>
           </div>
-        </div>
-
-        <div class="entry">
-          <div class="entry-main">
-            <div class="entry-title">
-              <strong>Puddle E-Commerce</strong>
-            </div>
-            <div class = "entry-meta-github">
-              <a class="repo" href="https://github.com/sudiptarathi2020/puddle" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-            <ul class="bullets">
-              <li>Created a Django-based e-commerce platform for toy and goods trading, supporting secure transactions.</li>
-              <li>Tools Used: Django, Python</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="entry">
-          <div class="entry-main">
-            <div class="entry-title">
-              <strong>Competitive Programming Solutions</strong>
-            </div>
-            <div class="entry-meta-github">
-              <a class="repo" href="https://github.com/sudiptarathi2020/Problem-Solves" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-            <ul class="bullets">
-              <li>Solved 540+ problems across Codeforces (383), LightOJ (82), CSES (53), Leetcode (54), HackerEarth (23).</li>
-              <li>Tools Used: C, C++, Java</li>
-            </ul>
-          </div>
+          <ul class="bullets">
+            <li>Developed interactive games using raylib with core game logic and UI in C++.</li>
+          </ul>
+          <a class="repo-link" href="https://github.com/sudiptarathi2020/raylib-tetris" target="_blank" rel="noopener noreferrer">
+            <i data-feather="github"></i> GitHub Repository
+          </a>
         </div>
       </section>
 
-      <section>
+      <!-- Education Section -->
+      <section class="glass-panel">
+        <h2>Education</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">BSc in Computer Science & Engineering</div>
+              <div class="entry-subtitle">Jahangirnagar University</div>
+            </div>
+            <div class="entry-meta">Mar 2020 – Jul 2025</div>
+          </div>
+          <ul class="bullets">
+            <li>CGPA: 3.30/4.0</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Technologies Section -->
+      <section class="glass-panel">
         <h2>Technologies</h2>
-        <p><strong>Languages &amp; Frameworks:</strong> C, C++, Java, Python, Bash, Django, Flask, Raylib</p>
-        <p><strong>Technologies:</strong> Docker, Kubernetes, Jenkins, GitHub Actions, AWS, Azure</p>
+        
+        <div class="skills-container">
+          <div class="skill-tag">C / C++</div>
+          <div class="skill-tag">Python / Django</div>
+          <div class="skill-tag">Java</div>
+          <div class="skill-tag">Bash / Linux</div>
+          <div class="skill-tag">Docker</div>
+          <div class="skill-tag">Kubernetes</div>
+          <div class="skill-tag">Jenkins</div>
+          <div class="skill-tag">GitHub Actions</div>
+          <div class="skill-tag">AWS / Azure</div>
+        </div>
       </section>
+
     </main>
   </div>
+
+  <script>
+    feather.replace();
+  </script>
 </body>
 </html>
